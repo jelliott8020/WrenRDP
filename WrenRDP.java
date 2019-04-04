@@ -87,8 +87,8 @@ public class WrenRDP extends RDP implements WrenTokens {
     }
 
     private void varlist2() {
-        if (currTok == SEMICOLON_TOK) {
-            match(SEMICOLON_TOK);
+        if (currTok == COMMA_TOK) {
+            match(COMMA_TOK);
             varlist();
         } else {
             lambda();
