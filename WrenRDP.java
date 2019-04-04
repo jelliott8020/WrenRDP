@@ -207,7 +207,7 @@ public class WrenRDP extends RDP implements WrenTokens {
     }
 
     private void intterm2() {
-        if (currTok == MULT_TOK || currTok == DIV_TOK) {
+        if (currTok == MUL_TOK || currTok == DIV_TOK) {
             strong_op();
             intelement();
             intterm2();
@@ -218,7 +218,7 @@ public class WrenRDP extends RDP implements WrenTokens {
 
     private void intelement() {
         if (currTok == INTCONST_TOK) {
-            match(INTCONT_TOK);
+            match(INTCONST_TOK);
         } else if (currTok == VARIABLE_TOK) {
             match(VARIABLE_TOK);
         } else if (currTok == RPAR_TOK) {
