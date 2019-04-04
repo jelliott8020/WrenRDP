@@ -59,7 +59,7 @@ public class WrenRDP extends RDP implements WrenTokens {
         if (currTok == VAR_TOK) {
             match(VAR_TOK);
             varlist();
-            match(COLON_TOK);
+            match(COMMA_TOK);
             type();
             match(SEMICOLON_TOK);
         } else {
